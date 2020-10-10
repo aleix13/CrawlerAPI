@@ -13,6 +13,7 @@ def home():
 @app.route("/hello/<name>")
 def hello_there(name):
     now = datetime.now()
+
     formatted_now = now.strftime("%A, %d %B, %Y at %X")
 
     # Filter the name argument to letters only using regular expressions. URL arguments
